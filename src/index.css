@@ -1,0 +1,105 @@
+/* Import Google Fonts (Lilita One, Oswald, Roboto) */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  /* Fonts Family */
+  --roboto-font: "Roboto", sans-serif;
+  --lilita-font: "Lilita One", cursive;
+  --oswald-font: "Oswald", sans-serif;
+
+  /* Colors */
+  --light-black: #333;
+  --light-white: #f7f7f7;
+  --light-red: #e3000e;
+  --light-grey: #f6f9fa;
+  --light-grey-2: #dddddd;
+  --white: #fff;
+  --yellow: #f7be27;
+  --grey: #757575;
+  --brown: #6f5e4d;
+  --bg-coffee: #642f21;
+}
+body,html{
+  font-size: 1rem;
+  font-family: var(--roboto-font);
+  font-weight: 300;
+}
+@media(max-width:992px){
+  body,html{
+    font-size: 0.875rem;
+  }
+}
+/*heading tag*/
+h1 ,h2,h3,h4,h5,h6{
+  font-family: var(--oswald-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+p{
+  font-size: 16px;
+}
+a{
+  color: var(--light-black);
+  text-decoration: none;
+  -webkit-transform: all 400ms ease-in-out;
+  -moz-transform:all 400ms ease-in-out ;
+  -o-transform: all 400ms ease-in-out;
+  -ms-transform: all 400ms ease-in-out;
+  transform: all 400ms ease-in-out;
+}
+/*custom scroll*/
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--yellow);
+}
+/*common button*/
+.order_now{
+color: var(--light-black);
+background: var(--yellow);
+border-color: var(--yellow);
+font-size: 16px;
+font-family: var(--oswald-font);
+font-weight: 600;
+vertical-align: middle;
+text-transform: uppercase;
+transform:all 3ms ease-in-out ;
+}
+.order_now:hover,
+.order_now:Focus{
+  color: var(--yellow);
+  background: transparent;
+  border-color: var(--white);
+}
+.order_now:hover,
+.order_now:Focus{
+  color: var(--white);
+  background: transparent;
+  border-color: var(--white);
+}
+
+.btn_red{
+  color: var(--white);
+  background: var(--light-red);
+  border-color: var(--light-red);
+}
+.btn_red:hover,
+.btn_red:Focus{
+  color: var(--light-red);
+  background: transparent;
+  border-color: var(--white);
+}
+
+
